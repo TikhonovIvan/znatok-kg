@@ -13949,63 +13949,64 @@ Dark Mode
   background: var(--whiteColor);
 } /*# sourceMappingURL=style.css.map */
 
-
-
 .custom-select {
-    background-color: #0c0e2b;
-    color: white;
-    padding-right: 30px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
-    background-repeat: no-repeat;
-    background-position: right 8px center;
+  background-color: #0c0e2b;
+  color: white;
+  padding-right: 30px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 8px center;
 }
 
 .custom-select option {
-    background: #0c0e2b;
-    color: white;
+  background: #0c0e2b;
+  color: white;
 }
 
 .custom-select option[disabled] {
-    color: #aaa;
+  color: #aaa;
 }
 
+/* Основные стили для карточки */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Используем 100% вместо фиксированных 430px */
+}
 
-  /* Основные стили для карточки */
-  .card-container {
-    display: flex;
-    flex-direction: column;
-    height: 100%; /* Используем 100% вместо фиксированных 430px */
-  }
-  
-  /* Контентная часть с растягиванием */
-  .card-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 15px; /* Добавляем отступы для красоты */
-  }
-  
-  /* Блок, который должен быть прижат к низу */
-  .card-footer {
-    margin-top: auto;
-    padding-top: 15px; /* Отступ сверху */
-  }
-  
-  /* Дополнительные стили для сохранения внешнего вида */
-  .gridarea__img {
-    flex-shrink: 0; /* Запрещаем сжимание изображения */
-  }
-  
-  .gridarea__heading {
-    margin: 10px 0;
-  }
-  
-  .gridarea__list ul {
-    display: flex;
-    gap: 15px;
-    padding: 0;
-    list-style: none;
-  }
+/* Контентная часть с растягиванием */
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 15px; /* Добавляем отступы для красоты */
+}
+
+/* Блок, который должен быть прижат к низу */
+.card-footer {
+  margin-top: auto;
+  padding-top: 15px; /* Отступ сверху */
+}
+
+/* Дополнительные стили для сохранения внешнего вида */
+.gridarea__img {
+  flex-shrink: 0; /* Запрещаем сжимание изображения */
+}
+
+.gridarea__heading {
+  margin: 10px 0;
+}
+
+.gridarea__list ul {
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  list-style: none;
+}
+
+.cke_notifications_area {
+  display: none;
+}
