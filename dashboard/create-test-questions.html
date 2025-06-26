@@ -383,7 +383,7 @@
             <div class="col-xl-12">
               <div class="breadcrumb__content__wraper" data-aos="fade-up">
                 <div class="breadcrumb__title">
-                  <h2 class="heading">Создать тест</h2>
+                  <h2 class="heading">Создание вопросов к тесту</h2>
                 </div>
               </div>
             </div>
@@ -423,6 +423,19 @@
       <div class="create__course sp_100">
         <div class="container">
           <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-12 mb-4">
+              <div class="dashboard__select__heading dashboard__form__input">
+                <label for="#">Укажите тест</label>
+              </div>
+              <div class="dashboard__selector">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Выберете тест</option>
+                  <option value="1">Тест 1</option>
+                  <option value="2">Тест 2</option>
+                </select>
+              </div>
+            </div>
+
             <div class="col-xl-8 col-lg-8 col-md-12 col-12">
               <div class="create__course__accordion__wraper">
                 <div class="accordion" id="questions-container">
@@ -650,6 +663,7 @@
         }
       </style>
 
+      <div></div>
       <script>
         document.addEventListener("DOMContentLoaded", function () {
           let questionCount = 1;
@@ -666,10 +680,10 @@
             newQuestionBlock.innerHTML = `
       <h2 class="accordion-header">
         <h2>Вопрос ${questionCount}</h2>
-        <div class="create__course__bottom__button ">
-           <button class="text-white" style="width: 200px; margin-left: 30px" data-question-id="${newQuestionId}">Удалить вопрос</button>
+        <div class="create__course__bottom__button">
+          <button class="delete-question-btn text-white" style="width: 200px; margin-left: 30px" data-question-id="${newQuestionId}">Удалить вопрос</button>
         </div>
-       
+              
       </h2>
       <div class="accordion-collapse collapse show">
         <div class="accordion-body">
@@ -861,7 +875,6 @@
             });
         });
       </script>
-
       <!-- become__instructor__end -->
 
       <!-- footer__start -->
