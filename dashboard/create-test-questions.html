@@ -425,61 +425,126 @@
           <div class="row">
             <div class="col-xl-8 col-lg-8 col-md-12 col-12">
               <div class="create__course__accordion__wraper">
-                <div class="accordion" id="accordionExample">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                      <h2 class="">Создать тест</h2>
+                <div class="accordion" id="questions-container">
+                  <!-- Первый блок вопроса (по умолчанию) -->
+                  <div
+                    class="accordion-item question-block"
+                    id="question-block-1"
+                  >
+                    <h2 class="accordion-header">
+                      <h2>Вопрос 1</h2>
                     </h2>
-                    <div
-                      id="collapseOne"
-                      class="accordion-collapse collapse show"
-                      aria-labelledby="headingOne"
-                      data-bs-parent="#accordionExample"
-                    >
+                    <div class="accordion-collapse collapse show">
                       <div class="accordion-body">
                         <div class="become__instructor__form">
                           <div class="row">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-12">
                               <div class="dashboard__form__wraper">
                                 <div class="dashboard__form__input">
-                                  <label for="#">Название теста</label>
+                                  <label>Текст вопроса</label>
                                   <input
                                     type="text"
-                                    placeholder="Введите название теста"
+                                    class="question-input"
+                                    placeholder="Введите текст вопроса"
                                   />
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Варианты ответов -->
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+                              <div class="dashboard__form__wraper">
+                                <div
+                                  class="dashboard__form__input answer-option"
+                                >
+                                  <label>Вариант ответа 1</label>
+                                  <div class="d-flex align-items-center">
+                                    <input
+                                      type="text"
+                                      class="answer-input"
+                                      placeholder="Введите вариант ответа"
+                                    />
+                                    <label class="checkbox-container ms-3 pb-4">
+                                      <input
+                                        type="checkbox"
+                                        class="correct-answer"
+                                      />
+                                      <span class="checkmark"></span>
+                                    </label>
+                                  </div>
                                 </div>
                               </div>
                             </div>
 
                             <div class="col-xl-12 col-lg-12 col-md-12 col-12">
                               <div class="dashboard__form__wraper">
-                                <div class="dashboard__form__input">
-                                  <label for="#">Информация о тесте</label>
-                                  <textarea
-                                    name=""
-                                    id=""
-                                    cols="30"
-                                    rows="10"
-                                  ></textarea>
+                                <div
+                                  class="dashboard__form__input answer-option"
+                                >
+                                  <label>Вариант ответа 2</label>
+                                  <div class="d-flex align-items-center">
+                                    <input
+                                      type="text"
+                                      class="answer-input"
+                                      placeholder="Введите вариант ответа"
+                                    />
+                                    <label class="checkbox-container ms-3 pb-4">
+                                      <input
+                                        type="checkbox"
+                                        class="correct-answer"
+                                      />
+                                      <span class="checkmark"></span>
+                                    </label>
+                                  </div>
                                 </div>
                               </div>
                             </div>
 
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-12 mb-4">
-                              <div
-                                class="dashboard__select__heading dashboard__form__input"
-                              >
-                                <label for="#">Укажите раздел</label>
-                              </div>
-                              <div class="dashboard__selector">
-                                <select
-                                  class="form-select"
-                                  aria-label="Default select example"
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+                              <div class="dashboard__form__wraper">
+                                <div
+                                  class="dashboard__form__input answer-option"
                                 >
-                                  <option selected>Выберите раздел</option>
-                                  <option value="1">Раздел 1:</option>
-                                  <option value="2">Раздел 2:</option>
-                                </select>
+                                  <label>Вариант ответа 3</label>
+                                  <div class="d-flex align-items-center">
+                                    <input
+                                      type="text"
+                                      class="answer-input"
+                                      placeholder="Введите вариант ответа"
+                                    />
+                                    <label class="checkbox-container ms-3 pb-4">
+                                      <input
+                                        type="checkbox"
+                                        class="correct-answer"
+                                      />
+                                      <span class="checkmark"></span>
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+                              <div class="dashboard__form__wraper">
+                                <div
+                                  class="dashboard__form__input answer-option"
+                                >
+                                  <label>Вариант ответа 4</label>
+                                  <div class="d-flex align-items-center">
+                                    <input
+                                      type="text"
+                                      class="answer-input"
+                                      placeholder="Введите вариант ответа"
+                                    />
+                                    <label class="checkbox-container ms-3 pb-4">
+                                      <input
+                                        type="checkbox"
+                                        class="correct-answer"
+                                      />
+                                      <span class="checkmark"></span>
+                                    </label>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -487,119 +552,316 @@
                       </div>
                     </div>
                   </div>
+                  <!-- Здесь будут добавляться новые блоки вопросов -->
                 </div>
               </div>
 
-              <div class="row">
+              <div class="row mt-4">
                 <div class="col-xl-8 col-lg-8 col-md-6 col-12">
-                  <div class="create__course__bottom__button">
-                    <a href="#">Создать тест</a>
+                  <div class="create__course__bottom__button d-flex gap-2">
+                    <a id="add-question-btn" style="color: #fff !important">
+                      Добавить вопрос
+                    </a>
+                    <button
+                      type="submit"
+                      id="save-questions-btn"
+                      class="text-white"
+                    >
+                      Сохранить все вопросы
+                    </button>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-4 col-lg-4 col-md-12 col-12 d-none">
-              <div class="create__course__wraper">
-                <div class="create__course__title">
-                  <h4>Пометка для задание курса</h4>
-                </div>
-                <div class="create__course__list">
-                  <ul>
-                    <li>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-check"
-                      >
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                      </svg>
-                      Укажите названи вашего курса.
-                    </li>
-
-                    <li>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-check"
-                      >
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                      </svg>
-                      Курс должен предоставлять <br />решение или базовые
-                      знания.
-                    </li>
-                    <li>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-check"
-                      >
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                      </svg>
-                      Выберите категорию курса.
-                    </li>
-                    <li>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-check"
-                      >
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                      </svg>
-                      Добавьте описание курса.
-                    </li>
-                    <li>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-check"
-                      >
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                      </svg>
-                      Выберите статус курса.
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <style>
+        .create__course__bottom__button button {
+          background: var(--primaryColor);
+          color: var(--whiteColor);
+          display: inline-block;
+          text-align: center;
+          padding: 13px;
+          width: 100%;
+          border-radius: 6px;
+          border: none;
+        }
+
+        .create__course__bottom__button button:hover {
+          background: var(--secondaryColor);
+          color: var(--whiteColor);
+        }
+
+        /* Стили для кастомных чекбоксов */
+        .checkbox-container {
+          display: inline-block;
+          position: relative;
+          padding-left: 30px;
+          cursor: pointer;
+          user-select: none;
+        }
+
+        .checkbox-container input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+        }
+
+        .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 20px;
+          width: 20px;
+          background-color: #eee;
+          border: 1px solid #ccc;
+        }
+
+        .checkbox-container:hover input ~ .checkmark {
+          background-color: #ddd;
+        }
+
+        .checkbox-container input:checked ~ .checkmark {
+          background-color: #2196f3;
+        }
+
+        .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+
+        .checkbox-container input:checked ~ .checkmark:after {
+          display: block;
+        }
+
+        .checkbox-container .checkmark:after {
+          left: 7px;
+          top: 3px;
+          width: 5px;
+          height: 10px;
+          border: solid white;
+          border-width: 0 2px 2px 0;
+          transform: rotate(45deg);
+        }
+      </style>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          let questionCount = 1;
+
+          // Функция для создания нового блока вопроса
+          function createNewQuestionBlock() {
+            questionCount++;
+            const newQuestionId = `question-block-${questionCount}`;
+
+            const newQuestionBlock = document.createElement("div");
+            newQuestionBlock.className = "accordion-item question-block";
+            newQuestionBlock.id = newQuestionId;
+
+            newQuestionBlock.innerHTML = `
+      <h2 class="accordion-header">
+        <h2>Вопрос ${questionCount}</h2>
+        <div class="create__course__bottom__button ">
+           <button class="text-white" style="width: 200px; margin-left: 30px" data-question-id="${newQuestionId}">Удалить вопрос</button>
+        </div>
+       
+      </h2>
+      <div class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          <div class="become__instructor__form">
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+                <div class="dashboard__form__wraper">
+                  <div class="dashboard__form__input">
+                    <label>Текст вопроса</label>
+                    <input type="text" class="question-input" placeholder="Введите текст вопроса">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+                <div class="dashboard__form__wraper">
+                  <div class="dashboard__form__input answer-option">
+                    <label>Вариант ответа 1</label>
+                    <div class="d-flex align-items-center">
+                      <input type="text" class="answer-input" placeholder="Введите вариант ответа">
+                      <label class="checkbox-container ms-3 pb-4">
+                        <input type="checkbox" class="correct-answer">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+                <div class="dashboard__form__wraper">
+                  <div class="dashboard__form__input answer-option">
+                    <label>Вариант ответа 2</label>
+                    <div class="d-flex align-items-center">
+                      <input type="text" class="answer-input" placeholder="Введите вариант ответа">
+                      <label class="checkbox-container ms-3 pb-4">
+                        <input type="checkbox" class="correct-answer">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+                <div class="dashboard__form__wraper">
+                  <div class="dashboard__form__input answer-option">
+                    <label>Вариант ответа 3</label>
+                    <div class="d-flex align-items-center">
+                      <input type="text" class="answer-input" placeholder="Введите вариант ответа">
+                      <label class="checkbox-container ms-3 pb-4">
+                        <input type="checkbox" class="correct-answer">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+                <div class="dashboard__form__wraper">
+                  <div class="dashboard__form__input answer-option">
+                    <label>Вариант ответа 4</label>
+                    <div class="d-flex align-items-center">
+                      <input type="text" class="answer-input" placeholder="Введите вариант ответа">
+                      <label class="checkbox-container ms-3 pb-4">
+                        <input type="checkbox" class="correct-answer">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+
+            return newQuestionBlock;
+          }
+
+          // Обработчик кнопки "Добавить вопрос"
+          document
+            .getElementById("add-question-btn")
+            .addEventListener("click", function () {
+              const newQuestionBlock = createNewQuestionBlock();
+              document
+                .getElementById("questions-container")
+                .appendChild(newQuestionBlock);
+            });
+
+          // Обработчик удаления вопроса (делегирование событий)
+          document.addEventListener("click", function (e) {
+            if (e.target.classList.contains("delete-question-btn")) {
+              const questionId = e.target.getAttribute("data-question-id");
+              const questionBlock = document.getElementById(questionId);
+              if (questionBlock) {
+                questionBlock.remove();
+                // Обновляем нумерацию вопросов
+                updateQuestionNumbers();
+              }
+            }
+          });
+
+          // Функция для обновления нумерации вопросов
+          function updateQuestionNumbers() {
+            const questionBlocks = document.querySelectorAll(".question-block");
+            questionCount = 0;
+
+            questionBlocks.forEach((block, index) => {
+              questionCount++;
+              const questionId = `question-block-${questionCount}`;
+              block.id = questionId;
+
+              const header = block.querySelector(".accordion-header h2");
+              header.textContent = `Вопрос ${questionCount}`;
+
+              const deleteBtn = block.querySelector(".delete-question-btn");
+              if (deleteBtn) {
+                deleteBtn.setAttribute("data-question-id", questionId);
+              }
+            });
+          }
+
+          // Обработчик кнопки "Сохранить все вопросы"
+          document
+            .getElementById("save-questions-btn")
+            .addEventListener("click", function () {
+              const questionBlocks =
+                document.querySelectorAll(".question-block");
+              if (questionBlocks.length === 0) {
+                alert("Пожалуйста, добавьте хотя бы один вопрос");
+                return;
+              }
+
+              const questionsData = [];
+              let hasErrors = false;
+
+              questionBlocks.forEach((block, index) => {
+                const questionText =
+                  block.querySelector(".question-input").value;
+                const answerInputs = block.querySelectorAll(".answer-input");
+                const correctCheckboxes =
+                  block.querySelectorAll(".correct-answer");
+
+                if (!questionText) {
+                  alert(`Пожалуйста, введите текст вопроса ${index + 1}`);
+                  hasErrors = true;
+                  return;
+                }
+
+                let hasCorrectAnswer = false;
+                const answers = [];
+
+                answerInputs.forEach((input, ansIndex) => {
+                  const answerText = input.value;
+                  const isCorrect = correctCheckboxes[ansIndex].checked;
+
+                  if (isCorrect) hasCorrectAnswer = true;
+
+                  answers.push({
+                    text: answerText || `Вариант ${ansIndex + 1}`,
+                    isCorrect: isCorrect,
+                  });
+                });
+
+                if (!hasCorrectAnswer) {
+                  alert(
+                    `Пожалуйста, укажите хотя бы один правильный ответ для вопроса ${
+                      index + 1
+                    }`
+                  );
+                  hasErrors = true;
+                  return;
+                }
+
+                questionsData.push({
+                  questionText: questionText,
+                  answers: answers,
+                });
+              });
+
+              if (!hasErrors) {
+                console.log("Все вопросы сохранены:", questionsData);
+                alert(`Успешно сохранено ${questionsData.length} вопросов!`);
+                // Здесь можно добавить код для отправки данных на сервер
+              }
+            });
+        });
+      </script>
+
       <!-- become__instructor__end -->
 
       <!-- footer__start -->

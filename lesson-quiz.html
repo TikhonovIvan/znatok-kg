@@ -1,68 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="zxx">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>lesson Quiz | Edurock - Education LMS Template</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/aos.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/icofont.min.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/plugins_plyr.css">
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/aos.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/icofont.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/plugins_plyr.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <script>
-        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-        if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-            document.documentElement.classList.add("is_dark");
-        }
-        if (localStorage.getItem("theme-color") === "light") {
-            document.documentElement.classList.remove("is_dark");
-        } 
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      if (
+        localStorage.getItem("theme-color") === "dark" ||
+        (!("theme-color" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("is_dark");
+      }
+      if (localStorage.getItem("theme-color") === "light") {
+        document.documentElement.classList.remove("is_dark");
+      }
     </script>
+  </head>
 
-</head>
-
-
-<body class="body__wrapper">
+  <body class="body__wrapper">
     <!-- pre loader area start -->
     <div id="back__preloader">
-        <div id="back__circle_loader"></div>
-        <div class="back__loader_logo">
-            <img loading="lazy"  src="img/pre.png" alt="Preload">
-        </div>
+      <div id="back__circle_loader"></div>
+      <div class="back__loader_logo">
+        <img loading="lazy" src="img/pre.png" alt="Preload" />
+      </div>
     </div>
     <!-- pre loader area end -->
 
     <!-- Dark/Light area start -->
     <div class="mode_switcher my_switcher">
-        <button id="light--to-dark-button" class="light align-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon dark__mode" viewBox="0 0 512 512"><path d="M160 136c0-30.62 4.51-61.61 16-88C99.57 81.27 48 159.32 48 248c0 119.29 96.71 216 216 216 88.68 0 166.73-51.57 200-128-26.39 11.49-57.38 16-88 16-119.29 0-216-96.71-216-216z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+      <button id="light--to-dark-button" class="light align-items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon dark__mode"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M160 136c0-30.62 4.51-61.61 16-88C99.57 81.27 48 159.32 48 248c0 119.29 96.71 216 216 216 88.68 0 166.73-51.57 200-128-26.39 11.49-57.38 16-88 16-119.29 0-216-96.71-216-216z"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="32"
+          />
+        </svg>
 
-            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon light__mode" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M256 48v48M256 416v48M403.08 108.92l-33.94 33.94M142.86 369.14l-33.94 33.94M464 256h-48M96 256H48M403.08 403.08l-33.94-33.94M142.86 142.86l-33.94-33.94"/><circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/></svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon light__mode"
+          viewBox="0 0 512 512"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-miterlimit="10"
+            stroke-width="32"
+            d="M256 48v48M256 416v48M403.08 108.92l-33.94 33.94M142.86 369.14l-33.94 33.94M464 256h-48M96 256H48M403.08 403.08l-33.94-33.94M142.86 142.86l-33.94-33.94"
+          />
+          <circle
+            cx="256"
+            cy="256"
+            r="80"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-miterlimit="10"
+            stroke-width="32"
+          />
+        </svg>
 
-            <span class="light__mode">Light</span>
-            <span class="dark__mode">Dark</span>
-        </button>
+        <span class="light__mode">Light</span>
+        <span class="dark__mode">Dark</span>
+      </button>
     </div>
     <!-- Dark/Light area end -->
 
-
     <main class="main_wrapper overflow-hidden">
-
-
       <!-- Шапка_контактов_и_сети__stert -->
       <div class="topbararea">
         <div class="container">
@@ -106,27 +139,25 @@
       </div>
       <!-- Шапка_контактов_и_сети__end -->
 
-
       <!-- Шапка сайта start -->
-        <header>
-            <div class="headerarea headerarea__2 header__sticky header__area">
-                <div class="container desktop__menu__wrapper">
-                    <div class="row">
-                        <div class="col-xl-2 col-lg-2 col-md-6">
-                            <div class="headerarea__left">
-                                <div class="headerarea__left__logo">
-
-                                    <a href="index.html" class="fs-2" style="font-weight: 900;">
-                                      
-                                      <span style="color: #f2277e;">Znatok</span"><span style="color: #5f2ded;">-KG</span></a>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-xl-7 col-lg-7 main_menu_wrap">
-                            <div class="headerarea__main__menu">
-                                <nav>
-                                     <ul>
+      <header>
+        <div class="headerarea headerarea__2 header__sticky header__area">
+          <div class="container desktop__menu__wrapper">
+            <div class="row">
+              <div class="col-xl-2 col-lg-2 col-md-6">
+                <div class="headerarea__left">
+                  <div class="headerarea__left__logo">
+                    <a href="index.html" class="fs-2" style="font-weight: 900">
+                      <span style="color: #f2277e">Znatok</span
+                      ><span style="color: #5f2ded">-KG</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-7 col-lg-7 main_menu_wrap">
+                <div class="headerarea__main__menu">
+                  <nav>
+                    <ul>
                       <li class="mega__menu position-static">
                         <a class="headerarea__has__dropdown" href="index.html"
                           >Главаня
@@ -146,617 +177,957 @@
                       </li>
 
                       <li class="mega__menu position-static">
-                        <a class="headerarea__has__dropdown" href="blog.html">Блог </a>
+                        <a class="headerarea__has__dropdown" href="blog.html"
+                          >Блог
+                        </a>
                       </li>
                     </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6">
-                            <div class="headerarea__right">
-
-                                <div class="header__cart d-none">
-                                    <a href="#"> <i class="icofont-cart-alt"></i></a>
-                                    <div class="header__right__dropdown__wrapper">
-                                        <div class="header__right__dropdown__inner">
-                                            <div class="single__header__right__dropdown">
-
-                                                <div class="header__right__dropdown__img">
-                                                    <a href="#">
-                                                        <img loading="lazy"  src="img/grid/cart1.jpg" alt="photo">
-                                                    </a>
-                                                </div>
-                                                <div class="header__right__dropdown__content">
-
-                                                    <a href="shop-product.html">Web Directory</a>
-                                                    <p>1 x <span class="price">$ 80.00</span></p>
-
-                                                </div>
-                                                <div class="header__right__dropdown__close">
-                                                    <a href="#"><i class="icofont-close-line"></i></a>
-                                                </div>
-                                            </div>
-
-                                            <div class="single__header__right__dropdown">
-
-                                                <div class="header__right__dropdown__img">
-                                                    <a href="#">
-                                                        <img loading="lazy"  src="img/grid/cart2.jpg" alt="photo">
-                                                    </a>
-                                                </div>
-                                                <div class="header__right__dropdown__content">
-
-                                                    <a href="shop-product.html">Design Minois</a>
-                                                    <p>1 x <span class="price">$ 60.00</span></p>
-
-                                                </div>
-                                                <div class="header__right__dropdown__close">
-                                                    <a href="#"><i class="icofont-close-line"></i></a>
-                                                </div>
-                                            </div>
-
-                                            <div class="single__header__right__dropdown">
-
-                                                <div class="header__right__dropdown__img">
-                                                    <a href="#">
-                                                        <img loading="lazy"  src="img/grid/cart3.jpg" alt="photo">
-                                                    </a>
-                                                </div>
-                                                <div class="header__right__dropdown__content">
-
-                                                    <a href="shop-product.html">Crash Course</a>
-                                                    <p>1 x <span class="price">$ 70.00</span></p>
-
-                                                </div>
-                                                <div class="header__right__dropdown__close">
-                                                    <a href="#"><i class="icofont-close-line"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <p class="dropdown__price">Total: <span>$1,100.00</span>
-                                        </p>
-                                        <div class="header__right__dropdown__button">
-                                            <a href="ecommerce/cart.html" class="white__color">View Cart</a>
-                                            <a href="ecommerce/checkout.html" class="blue__color">Checkout</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="headerarea__login">
-                                    <a href="login.html"><i class="icofont-user-alt-5"></i></a>
-                                </div>
-                                <div class="headerarea__button">
-                                    <a href="login.html">Начать обучение</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
+                  </nav>
                 </div>
-
-
-                <div class="container-fluid mob_menu_wrapper">
-                    <div class="row align-items-center">
-                        <div class="col-6">
-                            <div class="mobile-logo">
-                               <a href="index.html" class="fs-4" style="font-weight: 900;">
-                                      <span style="color: #f2277e;">Znatok</span"> <span style="color: #5f2ded;">- KG </span></a>
-                            </div>
-                        </div>
-                        <div class="col-6 ">
-                            <div class="header-right-wrap">
-    
-                                   
-                                <div class="mobile-off-canvas">
-                                    <a class="mobile-aside-button" href="#"><i class="icofont-navigation-menu"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- Шапка сайта end -->
-
-        <!-- Mobile Menu Start Here -->
-        <div class="mobile-off-canvas-active">
-            <a class="mobile-aside-close"><i class="icofont  icofont-close-line"></i></a>
-            <div class="header-mobile-aside-wrap">
-                <div class="mobile-search">
-                    <form class="search-form" action="#">
-                        <input type="text" placeholder="Найти курс или статью">
-                        <button class="button-search"><i class="icofont icofont-search-2"></i></button>
-                    </form>
-                </div>
-                <div class="mobile-menu-wrap headerarea">
-        
-                    <div class="mobile-navigation">
-        
-                        <nav>
-                            <ul class="mobile-menu">
-                                <li class="menu-item-has-children"><a href="index.html">Главная</a></li>
-                                <li class="menu-item-has-children "><a href="about.html">О нас</a></li>
-                                <li class="menu-item-has-children "><a href="blog.html">Блог</a></li>
-                                <li class="menu-item-has-children "><a href="course.html">Курсы</a></li>
-                                                                                
-                            </ul>
-                        </nav>
-        
-                    </div>
-        
-                </div>
-                <div class="mobile-curr-lang-wrap">
-                    
-                    <div class="single-mobile-curr-lang">
-                        <a class="mobile-account-active" href="#">Аккаунт <i class="icofont-thin-down"></i></a>
-                        <div class="lang-curr-dropdown account-dropdown-active">
-                            <ul>
-                                <li><a href="login.html">Вход</a></li>
-                                <br>
-                                <li><a href="login.html">Регистрация</a></li>
-                                  <br>
-                                <li><a href="login.html">Кабинет</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="mobile-social-wrap">
-                    <a class="facebook" href="#"><i class="icofont icofont-facebook"></i></a>
-                    <a class="twitter" href="#"><i class="icofont icofont-twitter"></i></a>
-                    <a class="pinterest" href="#"><i class="icofont icofont-pinterest"></i></a>
-                    <a class="instagram" href="#"><i class="icofont icofont-instagram"></i></a>
-                    <a class="google" href="#"><i class="icofont icofont-youtube-play"></i></a>
-                </div>
-            </div>
-        </div>
-        <!-- Mobile Menu end Here -->
-
-        <!-- theme fixed shadow -->
-        <div>
-            <div class="theme__shadow__circle"></div>
-            <div class="theme__shadow__circle shadow__right"></div>
-        </div>
-        <!-- theme fixed shadow -->
-
-                <!-- breadcrumbarea__section__start -->
-                <div class="breadcrumbarea" data-aos="fade-up">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-12">
-                                <div class="breadcrumb__content__wraper">
-                                    <div class="breadcrumb__title">
-                                        <h2 class="heading">Тест</h2>
-                                    </div>
-                                  
-                                </div>
-        
-        
-        
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="shape__icon__2">
-                        <img loading="lazy"  class=" shape__icon__img shape__icon__img__1" src="img/herobanner/herobanner__1.png" alt="photo">
-                        <img loading="lazy"  class=" shape__icon__img shape__icon__img__2" src="img/herobanner/herobanner__2.png" alt="photo">
-                        <img loading="lazy"  class=" shape__icon__img shape__icon__img__3" src="img/herobanner/herobanner__3.png" alt="photo">
-                        <img loading="lazy"  class=" shape__icon__img shape__icon__img__4" src="img/herobanner/herobanner__5.png" alt="photo">
-                    </div>
-        
-                </div>
-                <!-- breadcrumbarea__section__end-->
-
-
-        <!-- tution__section__start -->
-        <div class="tution sp_bottom_100 sp_top_100">
-            <div class="container-fluid full__width__padding">
-
-                <div class="row">
-                    <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12" data-aos="fade-up">
-
-                        <div class="accordion content__cirriculum__wrap" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Раздел #01
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-
-                                        <div class="scc__wrap">
-                                            <div class="scc__info">
-                                                <i class="icofont-video-alt"></i>
-                                                <h5> <a href="lesson.html"><span>Урок 1</span></a></h5>
-                                            </div>
-                                            <div class="scc__meta">
-                                                <strong>3.27</strong>
-                                                <a href="lesson.html"><span class="question"><i class="icofont-eye"></i> Посмотреть</span></a>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="scc__wrap">
-                                            <div class="scc__info">
-                                                <i class="icofont-video-alt"></i>
-                                                <h5> <a href="lesson.html"><span>Урок 2</span></a></h5>
-                                            </div>
-                                            <div class="scc__meta">
-                                                <strong>5.00</strong>
-                                                <a href="lesson.html"><span class="question"><i class="icofont-eye"></i> Посмотреть</span></a>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="scc__wrap">
-                                            <div class="scc__info">
-                                                <i class="icofont-file-text"></i>
-                                                <h5> <a href="lesson-course-materials.html"><span>Материалы курса</span></a></h5>
-                                            </div>
-                                        </div>
-                                        <div class="scc__wrap">
-                                            <div class="scc__info">
-                                                <i class="icofont-audio"></i>
-                                                <h5>  <a href="lesson-quiz.html"><span>Summer Quiz</span></a></h5>
-                                            </div>
-                                        </div>
-
-                                        <div class="scc__wrap">
-                                            <div class="scc__info">
-                                                <i class="icofont-file-text"></i>
-                                                <h5><a href="lesson-assignment.html"><span>Assignment</span></a></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Раздел #02
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-
-                                    <div class="accordion-body">
-
-                                        <div class="scc__wrap">
-                                            <div class="scc__info">
-                                                <i class="icofont-video-alt"></i>
-                                                <h5> <a href="lesson.html"><span>Course Intro</span></a></h5>
-                                            </div>
-                                            <div class="scc__meta">
-                                                <strong>3.27</strong>
-                                                <a href="lesson.html"><span class="question"><i class="icofont-eye"></i> Preview</span></a>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="scc__wrap">
-                                            <div class="scc__info">
-                                                <i class="icofont-video-alt"></i>
-                                                <h5> <a href="lesson-2.html"><span>Course Outline</span></a></h5>
-                                            </div>
-                                            <div class="scc__meta">
-                                                <strong>5.00</strong>
-                                                <a href="lesson-2.html"><span class="question"><i class="icofont-eye"></i> Preview</span></a>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="scc__wrap">
-                                            <div class="scc__info">
-                                                <i class="icofont-video-alt"></i>
-                                                <h5> <a href="lesson-2.html"><span>Course Outline</span></a></h5>
-                                            </div>
-                                            <div class="scc__meta">
-                                                <strong>7.00</strong>
-                                                <a href="lesson-3.html"><span class="question"><i class="icofont-eye"></i> Preview</span></a>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="scc__wrap">
-                                            <div class="scc__info">
-                                                <i class="icofont-file-text"></i>
-                                                <h5> <a href="lesson-course-materials.html"><span>Course Materials</span></a></h5>
-                                            </div>
-                                        </div>
-                                        <div class="scc__wrap">
-                                            <div class="scc__info">
-                                                <i class="icofont-audio"></i>
-                                                <h5>  <a href="lesson-quiz.html"><span>Summer Quiz</span></a></h5>
-                                            </div>
-                                        </div>
-
-                                        <div class="scc__wrap">
-                                            <div class="scc__info">
-                                                <i class="icofont-file-text"></i>
-                                                <h5><a href="lesson-assignment.html"><span>Assignment</span></a></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                                                      
-                            
-
-                        </div>
-                    </div>
-                    <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12" data-aos="fade-up">
-                        <div class="lesson__quiz__wrap">
-
-
-                            <div class="quiz__single__attemp">
-                                <ul>
-                                    <li> Вопросов  : 1/3 | </li>
-                                    
-                                </ul>
-                                <hr class="hr" />
-                                <h3>1. What is your favourite song?</h3>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                              Example song 1
-                                            </label>
-                                          </div>
-                                          <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                            <label class="form-check-label" for="flexCheckChecked">
-                                                Example song 2
-                                            </label>
-                                          </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                                Example song 3
-                                            </label>
-                                          </div>
-                                          <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                            <label class="form-check-label" for="flexCheckChecked">
-                                                Example song 4
-                                            </label>
-                                          </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                            <br><br><br>
-                            
-                            <div class="quiz__single__attemp">
-                                
-                                <hr class="hr" />
-                                <h3>1. What is your best Friend Name?</h3>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                              Example Name 1
-                                            </label>
-                                          </div>
-                                          <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                            <label class="form-check-label" for="flexCheckChecked">
-                                                Example Name 2
-                                            </label>
-                                          </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                                Example Name 3
-                                            </label>
-                                          </div>
-                                          <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                            <label class="form-check-label" for="flexCheckChecked">
-                                                Example Name 4
-                                            </label>
-                                          </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            
-                            <br><br><br>
-                            
-                            <div class="quiz__single__attemp">
-                               
-                                <hr class="hr" />
-                                <h3>1. What is your best Mentor Name?</h3>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                              Example Name 1
-                                            </label>
-                                          </div>
-                                          <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                            <label class="form-check-label" for="flexCheckChecked">
-                                                Example Name 2
-                                            </label>
-                                          </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                                Example Name 3
-                                            </label>
-                                          </div>
-                                          <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                            <label class="form-check-label" for="flexCheckChecked">
-                                                Example Name 4
-                                            </label>
-                                          </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <br><br>
-
-                            <a class="default__button" href="#"> Завершить
-                                <i class="icofont-long-arrow-right"></i>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-6">
+                <div class="headerarea__right">
+                  <div class="header__cart d-none">
+                    <a href="#"> <i class="icofont-cart-alt"></i></a>
+                    <div class="header__right__dropdown__wrapper">
+                      <div class="header__right__dropdown__inner">
+                        <div class="single__header__right__dropdown">
+                          <div class="header__right__dropdown__img">
+                            <a href="#">
+                              <img
+                                loading="lazy"
+                                src="img/grid/cart1.jpg"
+                                alt="photo"
+                              />
                             </a>
-
-
-                            <br><br><br>
-
-                                <div class="dashboard__table table-responsive d-none">
-                                    <h3>Результат теста</h3>
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>Quiz</th>
-                                                <th>Qus</th>
-                                                <th>TM</th>
-                                                <th>CA</th>
-                                                <th>Result</th>
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th>
-                                                    <p>December 26, 2024</p>
-                                                    <span>Write a on yourself using the 5</span>
-                                                    <p>Student: <a href="#">John Due</a></p>
-                                                </th>
-                                                <td>
-                                                    <p>4</p>
-                                                </td>
-                                                <td>
-                                                    <p>8</p>
-                                                </td>
-                                                <td>
-                                                    <p>4</p>
-                                                </td>
-                                                <td>
-                                                    <span class="dashboard__td">Pass</span>
-                                                </td>
-                                                <td>
-                                                    <div class="dashboard__button__group">
-                                                    <a class="dashboard__small__btn__2" href="#">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg> Edit</a>
-                                                    <a class="dashboard__small__btn__2 dashboard__small__btn__3" href="#">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg> Delete</a>
-                                                </div>
-                                            </td>
-                                            </tr>
-
-                                            <tr class="dashboard__table__row">
-                                                <th>
-                                                    <p>December 26, 2024</p>
-                                                    <span>Write a on yourself using the 5</span>
-                                                    <p>Student: <a href="#">John Due</a></p>
-                                                </th>
-                                                <td>
-                                                    <p>4</p>
-                                                </td>
-                                                <td>
-                                                    <p>8</p>
-                                                </td>
-                                                <td>
-                                                    <p>4</p>
-                                                </td>
-                                                <td>
-                                                    <span class="dashboard__td">Pass</span>
-                                                </td>
-                                                <td>
-                                                    <div class="dashboard__button__group">
-                                                    <a class="dashboard__small__btn__2" href="#">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg> Edit</a>
-                                                    <a class="dashboard__small__btn__2  dashboard__small__btn__3" href="#">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg> Delete</a>
-                                                </div>
-                                            </td>
-                                            </tr>
-
-                                            <tr>
-                                                <th>
-                                                    <p>December 26, 2024</p>
-                                                    <span>Write a on yourself using the 5</span>
-                                                    <p>Student: <a href="#">John Due</a></p>
-                                                </th>
-                                                <td>
-                                                    <p>4</p>
-                                                </td>
-                                                <td>
-                                                    <p>8</p>
-                                                </td>
-                                                <td>
-                                                    <p>4</p>
-                                                </td>
-                                                <td>
-                                                    <span class="dashboard__td">Pass</span>
-                                                </td>
-                                                <td>
-                                                    <div class="dashboard__button__group">
-                                                    <a class="dashboard__small__btn__2" href="#">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg> Edit</a>
-                                                    <a class="dashboard__small__btn__2  dashboard__small__btn__3" href="#">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg> Delete</a>
-                                                </div>
-                                            </td>
-                                            </tr>
-
-                                            <tr class="dashboard__table__row">
-                                                <th>
-                                                    <p>December 26, 2024</p>
-                                                    <span>Write a on yourself using the 5</span>
-                                                    <p>Student: <a href="#">John Due</a></p>
-                                                </th>
-                                                <td>
-                                                    <p>4</p>
-                                                </td>
-                                                <td>
-                                                    <p>8</p>
-                                                </td>
-                                                <td>
-                                                    <p>4</p>
-                                                </td>
-                                                <td>
-                                                    <span class="dashboard__td">Pass</span>
-                                                </td>
-                                                <td>
-                                                    <div class="dashboard__button__group">
-                                                    <a class="dashboard__small__btn__2" href="#">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg> Edit</a>
-                                                    <a class="dashboard__small__btn__2  dashboard__small__btn__3" href="#">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg> Delete</a>
-                                                </div>
-                                            </td>
-                                            </tr>
-                                         
-                                        </tbody>
-                                    </table>
-                                </div>
+                          </div>
+                          <div class="header__right__dropdown__content">
+                            <a href="shop-product.html">Web Directory</a>
+                            <p>1 x <span class="price">$ 80.00</span></p>
+                          </div>
+                          <div class="header__right__dropdown__close">
+                            <a href="#"><i class="icofont-close-line"></i></a>
+                          </div>
                         </div>
+
+                        <div class="single__header__right__dropdown">
+                          <div class="header__right__dropdown__img">
+                            <a href="#">
+                              <img
+                                loading="lazy"
+                                src="img/grid/cart2.jpg"
+                                alt="photo"
+                              />
+                            </a>
+                          </div>
+                          <div class="header__right__dropdown__content">
+                            <a href="shop-product.html">Design Minois</a>
+                            <p>1 x <span class="price">$ 60.00</span></p>
+                          </div>
+                          <div class="header__right__dropdown__close">
+                            <a href="#"><i class="icofont-close-line"></i></a>
+                          </div>
+                        </div>
+
+                        <div class="single__header__right__dropdown">
+                          <div class="header__right__dropdown__img">
+                            <a href="#">
+                              <img
+                                loading="lazy"
+                                src="img/grid/cart3.jpg"
+                                alt="photo"
+                              />
+                            </a>
+                          </div>
+                          <div class="header__right__dropdown__content">
+                            <a href="shop-product.html">Crash Course</a>
+                            <p>1 x <span class="price">$ 70.00</span></p>
+                          </div>
+                          <div class="header__right__dropdown__close">
+                            <a href="#"><i class="icofont-close-line"></i></a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <p class="dropdown__price">
+                        Total: <span>$1,100.00</span>
+                      </p>
+                      <div class="header__right__dropdown__button">
+                        <a href="ecommerce/cart.html" class="white__color"
+                          >View Cart</a
+                        >
+                        <a href="ecommerce/checkout.html" class="blue__color"
+                          >Checkout</a
+                        >
+                      </div>
                     </div>
+                  </div>
 
+                  <div class="headerarea__login">
+                    <a href="login.html"><i class="icofont-user-alt-5"></i></a>
+                  </div>
+                  <div class="headerarea__button">
+                    <a href="login.html">Начать обучение</a>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-        <!-- tution__section__end -->
+          </div>
 
+          <div class="container-fluid mob_menu_wrapper">
+            <div class="row align-items-center">
+              <div class="col-6">
+                <div class="mobile-logo">
+                  <a href="index.html" class="fs-4" style="font-weight: 900">
+                    <span style="color: #f2277e">Znatok</span>
+                    <span style="color: #5f2ded">- KG </span></a
+                  >
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="header-right-wrap">
+                  <div class="mobile-off-canvas">
+                    <a class="mobile-aside-button" href="#"
+                      ><i class="icofont-navigation-menu"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Шапка сайта end -->
+
+      <!-- Mobile Menu Start Here -->
+      <div class="mobile-off-canvas-active">
+        <a class="mobile-aside-close"
+          ><i class="icofont icofont-close-line"></i
+        ></a>
+        <div class="header-mobile-aside-wrap">
+          <div class="mobile-search">
+            <form class="search-form" action="#">
+              <input type="text" placeholder="Найти курс или статью" />
+              <button class="button-search">
+                <i class="icofont icofont-search-2"></i>
+              </button>
+            </form>
+          </div>
+          <div class="mobile-menu-wrap headerarea">
+            <div class="mobile-navigation">
+              <nav>
+                <ul class="mobile-menu">
+                  <li class="menu-item-has-children">
+                    <a href="index.html">Главная</a>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a href="about.html">О нас</a>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a href="blog.html">Блог</a>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a href="course.html">Курсы</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="mobile-curr-lang-wrap">
+            <div class="single-mobile-curr-lang">
+              <a class="mobile-account-active" href="#"
+                >Аккаунт <i class="icofont-thin-down"></i
+              ></a>
+              <div class="lang-curr-dropdown account-dropdown-active">
+                <ul>
+                  <li><a href="login.html">Вход</a></li>
+                  <br />
+                  <li><a href="login.html">Регистрация</a></li>
+                  <br />
+                  <li><a href="login.html">Кабинет</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-social-wrap">
+            <a class="facebook" href="#"
+              ><i class="icofont icofont-facebook"></i
+            ></a>
+            <a class="twitter" href="#"
+              ><i class="icofont icofont-twitter"></i
+            ></a>
+            <a class="pinterest" href="#"
+              ><i class="icofont icofont-pinterest"></i
+            ></a>
+            <a class="instagram" href="#"
+              ><i class="icofont icofont-instagram"></i
+            ></a>
+            <a class="google" href="#"
+              ><i class="icofont icofont-youtube-play"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Menu end Here -->
+
+      <!-- theme fixed shadow -->
+      <div>
+        <div class="theme__shadow__circle"></div>
+        <div class="theme__shadow__circle shadow__right"></div>
+      </div>
+      <!-- theme fixed shadow -->
+
+      <!-- breadcrumbarea__section__start -->
+      <div class="breadcrumbarea" data-aos="fade-up">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="breadcrumb__content__wraper">
+                <div class="breadcrumb__title">
+                  <h2 class="heading">Тест</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="shape__icon__2">
+          <img
+            loading="lazy"
+            class="shape__icon__img shape__icon__img__1"
+            src="img/herobanner/herobanner__1.png"
+            alt="photo"
+          />
+          <img
+            loading="lazy"
+            class="shape__icon__img shape__icon__img__2"
+            src="img/herobanner/herobanner__2.png"
+            alt="photo"
+          />
+          <img
+            loading="lazy"
+            class="shape__icon__img shape__icon__img__3"
+            src="img/herobanner/herobanner__3.png"
+            alt="photo"
+          />
+          <img
+            loading="lazy"
+            class="shape__icon__img shape__icon__img__4"
+            src="img/herobanner/herobanner__5.png"
+            alt="photo"
+          />
+        </div>
+      </div>
+      <!-- breadcrumbarea__section__end-->
+
+      <!-- tution__section__start -->
+      <div class="tution sp_bottom_100 sp_top_100">
+        <div class="container-fluid full__width__padding">
+          <div class="row">
+            <div
+              class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12"
+              data-aos="fade-up"
+            >
+              <div
+                class="accordion content__cirriculum__wrap"
+                id="accordionExample"
+              >
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Раздел #01
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="scc__wrap">
+                        <div class="scc__info">
+                          <i class="icofont-video-alt"></i>
+                          <h5>
+                            <a href="lesson.html"><span>Урок 1</span></a>
+                          </h5>
+                        </div>
+                        <div class="scc__meta">
+                          <strong>3.27</strong>
+                          <a href="lesson.html"
+                            ><span class="question"
+                              ><i class="icofont-eye"></i> Посмотреть</span
+                            ></a
+                          >
+                        </div>
+                      </div>
+                      <div class="scc__wrap">
+                        <div class="scc__info">
+                          <i class="icofont-video-alt"></i>
+                          <h5>
+                            <a href="lesson.html"><span>Урок 2</span></a>
+                          </h5>
+                        </div>
+                        <div class="scc__meta">
+                          <strong>5.00</strong>
+                          <a href="lesson.html"
+                            ><span class="question"
+                              ><i class="icofont-eye"></i> Посмотреть</span
+                            ></a
+                          >
+                        </div>
+                      </div>
+                      <div class="scc__wrap">
+                        <div class="scc__info">
+                          <i class="icofont-file-text"></i>
+                          <h5>
+                            <a href="lesson-course-materials.html"
+                              ><span>Материалы курса</span></a
+                            >
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="scc__wrap">
+                        <div class="scc__info">
+                          <i class="icofont-audio"></i>
+                          <h5>
+                            <a href="lesson-quiz.html"
+                              ><span>Summer Quiz</span></a
+                            >
+                          </h5>
+                        </div>
+                      </div>
+
+                      <div class="scc__wrap">
+                        <div class="scc__info">
+                          <i class="icofont-file-text"></i>
+                          <h5>
+                            <a href="lesson-assignment.html"
+                              ><span>Assignment</span></a
+                            >
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Раздел #02
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="scc__wrap">
+                        <div class="scc__info">
+                          <i class="icofont-video-alt"></i>
+                          <h5>
+                            <a href="lesson.html"><span>Course Intro</span></a>
+                          </h5>
+                        </div>
+                        <div class="scc__meta">
+                          <strong>3.27</strong>
+                          <a href="lesson.html"
+                            ><span class="question"
+                              ><i class="icofont-eye"></i> Preview</span
+                            ></a
+                          >
+                        </div>
+                      </div>
+                      <div class="scc__wrap">
+                        <div class="scc__info">
+                          <i class="icofont-video-alt"></i>
+                          <h5>
+                            <a href="lesson-2.html"
+                              ><span>Course Outline</span></a
+                            >
+                          </h5>
+                        </div>
+                        <div class="scc__meta">
+                          <strong>5.00</strong>
+                          <a href="lesson-2.html"
+                            ><span class="question"
+                              ><i class="icofont-eye"></i> Preview</span
+                            ></a
+                          >
+                        </div>
+                      </div>
+                      <div class="scc__wrap">
+                        <div class="scc__info">
+                          <i class="icofont-video-alt"></i>
+                          <h5>
+                            <a href="lesson-2.html"
+                              ><span>Course Outline</span></a
+                            >
+                          </h5>
+                        </div>
+                        <div class="scc__meta">
+                          <strong>7.00</strong>
+                          <a href="lesson-3.html"
+                            ><span class="question"
+                              ><i class="icofont-eye"></i> Preview</span
+                            ></a
+                          >
+                        </div>
+                      </div>
+                      <div class="scc__wrap">
+                        <div class="scc__info">
+                          <i class="icofont-file-text"></i>
+                          <h5>
+                            <a href="lesson-course-materials.html"
+                              ><span>Course Materials</span></a
+                            >
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="scc__wrap">
+                        <div class="scc__info">
+                          <i class="icofont-audio"></i>
+                          <h5>
+                            <a href="lesson-quiz.html"
+                              ><span>Summer Quiz</span></a
+                            >
+                          </h5>
+                        </div>
+                      </div>
+
+                      <div class="scc__wrap">
+                        <div class="scc__info">
+                          <i class="icofont-file-text"></i>
+                          <h5>
+                            <a href="lesson-assignment.html"
+                              ><span>Assignment</span></a
+                            >
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12"
+              data-aos="fade-up"
+            >
+              <div class="lesson__quiz__wrap">
+                <div class="quiz__single__attemp">
+                  <ul>
+                    <li>Вопросов : 1/3 |</li>
+                  </ul>
+                  <hr class="hr" />
+                  <h3>1. What is your favourite song?</h3>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Example song 1
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Example song 2
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Example song 3
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Example song 4
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <br /><br /><br />
+
+                <div class="quiz__single__attemp">
+                  <hr class="hr" />
+                  <h3>1. What is your best Friend Name?</h3>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Example Name 1
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Example Name 2
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Example Name 3
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Example Name 4
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <br /><br /><br />
+
+                <div class="quiz__single__attemp">
+                  <hr class="hr" />
+                  <h3>1. What is your best Mentor Name?</h3>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Example Name 1
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Example Name 2
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Example Name 3
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Example Name 4
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <br /><br />
+
+                <a class="default__button" href="#">
+                  Завершить
+                  <i class="icofont-long-arrow-right"></i>
+                </a>
+
+                <br /><br /><br />
+
+                <div class="dashboard__table table-responsive d-none">
+                  <h3>Результат теста</h3>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Quiz</th>
+                        <th>Qus</th>
+                        <th>TM</th>
+                        <th>CA</th>
+                        <th>Result</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>
+                          <p>December 26, 2024</p>
+                          <span>Write a on yourself using the 5</span>
+                          <p>Student: <a href="#">John Due</a></p>
+                        </th>
+                        <td>
+                          <p>4</p>
+                        </td>
+                        <td>
+                          <p>8</p>
+                        </td>
+                        <td>
+                          <p>4</p>
+                        </td>
+                        <td>
+                          <span class="dashboard__td">Pass</span>
+                        </td>
+                        <td>
+                          <div class="dashboard__button__group">
+                            <a class="dashboard__small__btn__2" href="#">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="feather feather-edit"
+                              >
+                                <path
+                                  d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                                ></path>
+                                <path
+                                  d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"
+                                ></path>
+                              </svg>
+                              Edit</a
+                            >
+                            <a
+                              class="dashboard__small__btn__2 dashboard__small__btn__3"
+                              href="#"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="feather feather-trash-2"
+                              >
+                                <polyline points="3 6 5 6 21 6"></polyline>
+                                <path
+                                  d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                                ></path>
+                                <line x1="10" y1="11" x2="10" y2="17"></line>
+                                <line x1="14" y1="11" x2="14" y2="17"></line>
+                              </svg>
+                              Delete</a
+                            >
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr class="dashboard__table__row">
+                        <th>
+                          <p>December 26, 2024</p>
+                          <span>Write a on yourself using the 5</span>
+                          <p>Student: <a href="#">John Due</a></p>
+                        </th>
+                        <td>
+                          <p>4</p>
+                        </td>
+                        <td>
+                          <p>8</p>
+                        </td>
+                        <td>
+                          <p>4</p>
+                        </td>
+                        <td>
+                          <span class="dashboard__td">Pass</span>
+                        </td>
+                        <td>
+                          <div class="dashboard__button__group">
+                            <a class="dashboard__small__btn__2" href="#">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="feather feather-edit"
+                              >
+                                <path
+                                  d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                                ></path>
+                                <path
+                                  d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"
+                                ></path>
+                              </svg>
+                              Edit</a
+                            >
+                            <a
+                              class="dashboard__small__btn__2 dashboard__small__btn__3"
+                              href="#"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="feather feather-trash-2"
+                              >
+                                <polyline points="3 6 5 6 21 6"></polyline>
+                                <path
+                                  d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                                ></path>
+                                <line x1="10" y1="11" x2="10" y2="17"></line>
+                                <line x1="14" y1="11" x2="14" y2="17"></line>
+                              </svg>
+                              Delete</a
+                            >
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th>
+                          <p>December 26, 2024</p>
+                          <span>Write a on yourself using the 5</span>
+                          <p>Student: <a href="#">John Due</a></p>
+                        </th>
+                        <td>
+                          <p>4</p>
+                        </td>
+                        <td>
+                          <p>8</p>
+                        </td>
+                        <td>
+                          <p>4</p>
+                        </td>
+                        <td>
+                          <span class="dashboard__td">Pass</span>
+                        </td>
+                        <td>
+                          <div class="dashboard__button__group">
+                            <a class="dashboard__small__btn__2" href="#">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="feather feather-edit"
+                              >
+                                <path
+                                  d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                                ></path>
+                                <path
+                                  d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"
+                                ></path>
+                              </svg>
+                              Edit</a
+                            >
+                            <a
+                              class="dashboard__small__btn__2 dashboard__small__btn__3"
+                              href="#"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="feather feather-trash-2"
+                              >
+                                <polyline points="3 6 5 6 21 6"></polyline>
+                                <path
+                                  d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                                ></path>
+                                <line x1="10" y1="11" x2="10" y2="17"></line>
+                                <line x1="14" y1="11" x2="14" y2="17"></line>
+                              </svg>
+                              Delete</a
+                            >
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr class="dashboard__table__row">
+                        <th>
+                          <p>December 26, 2024</p>
+                          <span>Write a on yourself using the 5</span>
+                          <p>Student: <a href="#">John Due</a></p>
+                        </th>
+                        <td>
+                          <p>4</p>
+                        </td>
+                        <td>
+                          <p>8</p>
+                        </td>
+                        <td>
+                          <p>4</p>
+                        </td>
+                        <td>
+                          <span class="dashboard__td">Pass</span>
+                        </td>
+                        <td>
+                          <div class="dashboard__button__group">
+                            <a class="dashboard__small__btn__2" href="#">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="feather feather-edit"
+                              >
+                                <path
+                                  d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                                ></path>
+                                <path
+                                  d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"
+                                ></path>
+                              </svg>
+                              Edit</a
+                            >
+                            <a
+                              class="dashboard__small__btn__2 dashboard__small__btn__3"
+                              href="#"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="feather feather-trash-2"
+                              >
+                                <polyline points="3 6 5 6 21 6"></polyline>
+                                <path
+                                  d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                                ></path>
+                                <line x1="10" y1="11" x2="10" y2="17"></line>
+                                <line x1="14" y1="11" x2="14" y2="17"></line>
+                              </svg>
+                              Delete</a
+                            >
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- tution__section__end -->
 
       <!-- footer__start -->
       <div class="footerarea">
         <div class="container">
-          
-
           <div class="footerarea__wrapper footerarea__wrapper__2">
             <div class="row">
               <div
@@ -768,11 +1139,8 @@
                     <h3>О нас</h3>
                   </div>
                   <div class="footerarea__content">
-                    <p>
-                      Мы предлагаем лучше решение для вашего будущего
-                    </p>
+                    <p>Мы предлагаем лучше решение для вашего будущего</p>
                   </div>
-                  
                 </div>
               </div>
               <div
@@ -797,7 +1165,6 @@
                       <li>
                         <a href="#">Блог</a>
                       </li>
-                    
                     </ul>
                   </div>
                 </div>
@@ -910,24 +1277,15 @@
                 <div
                   class="footerarea__copyright__content footerarea__copyright__content__2"
                 >
-                  <p>
-                    Копирайт© <span>2025</span> все права защищены.
-                  </p>
+                  <p>Копирайт© <span>2025</span> все права защищены.</p>
                 </div>
               </div>
-              
             </div>
           </div>
         </div>
       </div>
       <!-- footer__end -->
-
-
     </main>
-
-
-
-
 
     <!-- JS here -->
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
@@ -946,20 +1304,25 @@
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/plugin_plyr.js" ></script>
+    <script src="js/plugin_plyr.js"></script>
     <script src="js/main.js"></script>
 
     <script>
-        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-        if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-          document.getElementById("light--to-dark-button")?.classList.add("dark--mode");
-        } 
-        if (localStorage.getItem("theme-color") === "light") {
-          document.getElementById("light--to-dark-button")?.classList.remove("dark--mode");
-        } 
-      </script>
-
-
-</body>
-
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      if (
+        localStorage.getItem("theme-color") === "dark" ||
+        (!("theme-color" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document
+          .getElementById("light--to-dark-button")
+          ?.classList.add("dark--mode");
+      }
+      if (localStorage.getItem("theme-color") === "light") {
+        document
+          .getElementById("light--to-dark-button")
+          ?.classList.remove("dark--mode");
+      }
+    </script>
+  </body>
 </html>
